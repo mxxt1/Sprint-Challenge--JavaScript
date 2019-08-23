@@ -31,13 +31,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .forEach executes a function across all elements of an array once for each element, but does not return or push results to a new array automatically. 
+    .map actually creates a new array and outputs the return from a given function into that new array.
+
 2. What is the difference between a function and a method?
+
+    A function is an object that contains logic to execute a specific computation, whereas a method is a function that belongs to/is included in a class, or specified as a prototype function to a specific constructor object prototype.
 
 3. What is closure?
 
+    Closure is the concept of scoping parent-child-grandchild functions, or defining the lexical scope of function/nested functions. Closure allows a child/grandchild to access variables from its parent(s) function.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1) Window - calling this in the global scope creates a window binding, pulling in the entire catalog of methods available in js. 
+    2) Implicit declaration - 'this' refers to the object creating on which the method is called. 'this' refers to objects left of the dot. 
+    3) Explicit - The object that 'this' refers to is explicitly identified using call/apply/bind. Call/apply execute immediately, while bind creates a function to be used in the future. 
+    4) Constructor - 'this' refers to the object created using the constructor function and the 'new' keyword. 
+
 5. Why do we need super() in an extended class?
+
+    super() is required to actually pull a parent class's properties/attributes/methods into the child function. While 'extends' keyword declares the child as an extension of the parent (linking them), if super() is not called, the 'this' keyword will not work in reference to  parent properties. 
 
 ## Project Set up
 
