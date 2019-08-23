@@ -11,8 +11,8 @@
 const tyrannosaurus = {
   name: "tyrannosaurus",
   diet: "carnivorous",
-  weight: 7000,
-  length: 12,
+  weight: '7000kg',
+  length: '12m',
   period: 'Late Cretaceous',
   roar: function(){
     return 'RAWERSRARARWERSARARARRRR';
@@ -25,8 +25,8 @@ const tyrannosaurus = {
 const stegosaurus = {
   name: "stegosaurus",
   diet: "herbivorous",
-  weight: 2000,
-  length: 9,
+  weight: '2000kg',
+  length: '9m',
   period: 'Late Jurassic'
 }
 
@@ -35,8 +35,8 @@ const stegosaurus = {
 const velociraptor = {
   name: "velociraptor",
   diet: "carnivorous",
-  weight: 15,
-  length: 1.8,
+  weight: '15kg',
+  length: '1.8m',
   period: 'Late Cretaceous'
 }
 
