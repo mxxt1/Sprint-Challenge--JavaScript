@@ -169,5 +169,5 @@ Stretch: If you haven't already, convert your array method callbacks into arrow 
 
 */
 
-//Stretch completed.
+//Stretch completed, functions use arrow notation
 
