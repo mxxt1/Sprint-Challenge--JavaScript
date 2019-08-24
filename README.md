@@ -1,3 +1,4 @@
+init
 # Sprint Challenge: JavaScript Fundamentals
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a survey of problems. This Sprint explored JavaScript Fundamentals. During this Sprint, you studied variables, functions, object literals, arrays, this keyword, prototypes, and class syntax. In your challenge this week, you will demonstrate proficiency by completing a survey of JavaScript problems.
@@ -30,31 +31,45 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    .forEach executes a function across all elements of an array once for each element, but does not return or push results to a new array automatically. 
+    .map actually creates a new array and outputs the return from a given function into that new array.
+
 2. What is the difference between a function and a method?
+
+    A function is an object that contains logic to execute a specific computation, whereas a method is a function that belongs to/is included in a class, or specified as a prototype function to a specific constructor object prototype.
 
 3. What is closure?
 
+    Closure is the concept of scoping parent-child-grandchild functions, or defining the lexical scope of function/nested functions. Closure allows a child/grandchild to access variables from its parent(s) function.
+
 4. Describe the four rules of the 'this' keyword.
 
+    1) Window - calling this in the global scope creates a window binding, pulling in the entire catalog of methods available in js. 
+    2) Implicit declaration - 'this' refers to the object creating on which the method is called. 'this' refers to objects left of the dot. 
+    3) Explicit - The object that 'this' refers to is explicitly identified using call/apply/bind. Call/apply execute immediately, while bind creates a function to be used in the future. 
+    4) Constructor - 'this' refers to the object created using the constructor function and the 'new' keyword. 
+
 5. Why do we need super() in an extended class?
+
+    super() is required to actually pull a parent class's properties/attributes/methods into the child function. While 'extends' keyword declares the child as an extension of the parent (linking them), if super() is not called, the 'this' keyword will not work in reference to  parent properties. 
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add TL as collaborator on Github.
+- [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your team lead as a Reviewer on the Pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [x] Add your team lead as a Reviewer on the Pull-request
 - [ ] TL then will count the HW as done by  merging the branch back into master.
 
 
@@ -64,24 +79,24 @@ Your finished project must include all of the following requirements:
 
 **Pro tip for this challenge: If something seems like it isn't working locally, copy and paste your code up to codepen and take another look at the console.**
 
-## Task 1: Objects and Arrays
+## Task 1: Objects and Arrays - Complete
 Test your knowledge of objects and arrays. 
 * [ ] Use the [objects-arrays.js](challenges/objects-arrays.js) link to get started.  Read the instructions carefully!
 
-## Task 2: Functions
+## Task 2: Functions - Complete
 This challenge takes a look at callbacks and closures as well as scope. 
 * [ ] Use the [functions.js](challenges/functions.js) link to get started. Read the instructions carefully!
 
-## Task 3: Prototypes
+## Task 3: Prototypes - Complete
 Create constructors, bind methods, and create cuboids in this prototypes challenge.
 * [ ] Use the [prototypes.js](challenges/prototypes.js) link to get started. Read the instructions carefully!
 
-## Task 4: Classes
+## Task 4: Classes - Complete
 Once you have completed the prototypes challenge, it's time to convert all your hard work into classes.
 * [ ] Use the [classes.js](challenges/classes.js) link to get started. Read the instructions carefully!
 
 In your solutions, it is essential that you follow best practices and produce clean and professional results. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
-## Stretch Problems
+## Stretch Problems - Complete
 
 There are a few stretch problems found throughout the files, don't work on them until you are finished with MVP requirements!
